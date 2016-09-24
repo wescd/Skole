@@ -1,0 +1,35 @@
+a) Beskriv programflyten med ord når den første forelesningen er fra 10 til 12
+   og den andre er fra 11 til 13.
+
+KOden vil da kjøre, og spør er slutt1 mindre / er lik start2 ?
+eller slutt2 mindre / er lik start 1.
+
+Det vil si er 12 mindre eller  lik 11 ?
+           er 13 mindre eller  lik 10 ?
+           Vi ser 2 int ikke stemme
+
+           Da vil denne koden kjøre
+           System.out.println("Forelesningene overlapper.");
+
+
+b) Beskriv programflyten med ord når den første forelesningen er fra 10 til 11
+   og den andre er fra 12 til 13
+
+
+   Gjør det samme igjen som a)
+   Er 11 mindre eller lik 12 ?
+   Er 13 mindre eller lik 10
+   Her ser vi slutt1 <= start2
+
+   Da vil denne kOden kjøre
+   System.out.println("Forelesningene overlapper.");
+
+c)
+     1500 til 1300
+     1600 til 1400
+
+     if(13 <= 16 || 1400 <= 1500)
+
+     Koden er veldig simple, vist jeg bruke det tidspunkted oppføre.
+     Vil koden bare kjøre og ikke skjønne at det ikke går an å spole tilbake
+     Det vi kan gjøre er å legge inn en kode som sjekke start1 > slutt2

@@ -1,0 +1,59 @@
+import java.util.Scanner;
+     public class PersonRegister {
+       public static void main(String[] args) {
+         // Antok at brukeren taster 1 og faktisk skrive navn og bosted
+         // så trykke 2,
+    1    Scanner innleser = new Scanner(System.in);
+    2    String navn = "Ikke satt";
+    3    String bosted = "Ikke satt";
+    4    int valg = 0;
+
+
+    5   printMeny();
+    6   valg = Integer.parseInt(innleser.nextLine());
+
+    7   if (valg == 1) {
+    8   registrerPerson();
+    10   navn = innleser.nextLine();
+    11   bosted = innleser.nextLine();
+       }
+
+      if (valg == 2) {
+      printPerson(navn, bosted);
+      }
+
+  12  printMeny();
+  13   valg = Integer.parseInt(innleser.nextLine());
+
+      if (valg == 1) {
+      registrerPerson();
+      navn = innleser.nextLine();
+      bosted = innleser.nextLine();
+      }
+
+  14    if (valg == 2) {
+      printPerson(navn, bosted);
+      }
+  }
+
+    // metode for aa gjore valg fra brukeren
+5 og 12
+    static void printMeny() {
+    System.out.println("1. Registrer en person");
+    System.out.println("2. Print personen");
+    }
+
+    // metode for aa skrive ut beskjed om aa registrere en person
+  8
+    static void registrerPerson() {
+      System.out.println("Skriv inn navnet, trykk enter," +
+              "og skriv saa inn bostedet og trykk enter");
+    }
+
+    // metode for å printe en person
+ 15
+    static void printPerson(String navnForUskrift, String bostedForUskrift){
+    System.out.println("Du har registert personen: " +
+    navnForUskrift + " fra " + bostedForUskrift);
+    }
+}

@@ -1,0 +1,15 @@
+a) Hva er grensesnittet til en klasse?
+
+grensesnitte til er klassen er di abstratsjon metodene klassen?
+Og du bruke det til å kommunisere med andree.
+
+a) Hvordan skiller det seg fra implementasjonen av en klasse?
+
+det er detaljenen, det som får klassen til å fungere
+
+b) Hva er en instansmetode og hvordan skiller den seg fra en statisk metode
+(slike metoder vi har jobbet med tidligere)? Forklar dette ved å vise til både
+konkrete eksempler på en instansmetode og en statisk metode.
+
+Instansmetode er det vi ikke deklareret som static.
+og kan brukes flere ganger i mange ulike objekter.
